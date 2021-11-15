@@ -1,0 +1,42 @@
+/* .flowers{
+
+} */
+/* .cls-1 {
+  fill: none;
+} */
+/* .cls-2 {
+  opacity: 0.9;
+} */
+.flowers-cont {
+  opacity: 0.9;
+  clip-path: url(#clip-path-flowers);
+}
+.flower-layer-2 {
+  fill: url(#linear-gradient-flowers);
+}
+/*.cls-5 {
+  fill: #210803;
+}
+ .cls-6 {
+  fill: #a30000;
+} */
+.flower-layer-3 {
+  fill: url(#linear-gradient-flowers-2);
+}
+.airplain-black,
+.airplain-dast {
+  fill: #4a4947;
+}
+.airplain-dast {
+  opacity: 0.27;
+  isolation: isolate;
+}
+.flower-layer-1 {
+  fill: url(#linear-gradient-flowers-3);
+}
+.airplain1 {
+  fill: #fcc753;
+}
+.airplain2 {
+  fill: #7e421d;
+}

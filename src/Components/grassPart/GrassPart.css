@@ -1,0 +1,125 @@
+.grass-tower-cont,
+.tower {
+  isolation: isolate;
+}
+.grass-cont{
+    opacity: 0.9;
+  clip-path: url(#clip-path);
+}
+.bush9 {
+  fill: url(#linear-gradient);
+}
+.bush10 {
+  fill: url(#linear-gradient-2);
+}
+.hill3 {
+  fill: url(#linear-gradient-7);
+}
+.darkgreed-shadow {
+  fill: #3c7726;
+}
+.darkgreed-shadow,
+.yellow-shadow,
+.green-shadow1,
+.green-shadow2,
+.green-shadow,
+.green-shadow4,
+.yellow-shadow,
+.green-shadow3 {
+  opacity: 0.1;
+}
+.yellow-shadow {
+  fill: #fcff78;
+}
+.road {
+  fill: url(#linear-gradient-8);
+}
+.hill4 {
+  fill: url(#linear-gradient-9);
+}
+.green-shadow1 {
+  fill: #5fb537;
+}
+.green-shadow2 {
+  fill: #6dce45;
+}
+.line1 {
+  fill: url(#linear-gradient-10);
+}
+.bush1 {
+  fill: url(#linear-gradient-11);
+}
+.bush2 {
+  fill: url(#linear-gradient-12);
+}
+.bush3 {
+  fill: url(#linear-gradient-13);
+}
+.bush4 {
+  fill: url(#linear-gradient-14);
+}
+.hill1 {
+  fill: url(#linear-gradient-15);
+}
+.bush5 {
+  fill: url(#linear-gradient-16);
+}
+.bush6 {
+  fill: url(#linear-gradient-17);
+}
+.bush7 {
+  fill: url(#linear-gradient-18);
+}
+.hill2 {
+  fill: url(#linear-gradient-20);
+}
+.green-shadow {
+  fill: #4f9a37;
+}
+.green-shadow4 {
+  fill: #2d5e1b;
+}
+.bush11 {
+  fill: url(#linear-gradient-22);
+}
+.yellow-shadow {
+  fill: #dae837;
+}
+.bush8 {
+  fill: url(#linear-gradient-23);
+}
+.oreng-shadow {
+  fill: #e8b937;
+  opacity: 0.15;
+}
+.hill5 {
+  fill: url(#linear-gradient-24);
+}
+.green-shadow3 {
+  fill: #274f16;
+}
+.tower7 {
+  fill: #700f0c;
+}
+.tower {
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+.tower1 {
+  fill: #fffdfd;
+}
+.tower6 {
+  fill: #e2e0e0;
+}
+.tower5 {
+  fill: #c6c6c6;
+}
+.tower4 {
+  fill: #a4a4a4;
+}
+.tower2 {
+  fill: #d11e1e;
+}
+.tower3 {
+  fill: #d81d1d;
+}

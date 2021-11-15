@@ -1,0 +1,172 @@
+.map-part {
+  height: 96vh;
+}
+
+.map {
+  height: 49vh;
+  width: 94vw;
+  /* background-image: url(../../images/map.png);
+  background-size: 100% 100%; */
+}
+
+.map-color {
+  fill: #ab7320;
+}
+.map-back {
+  clip-path: url(#clip-path-4);
+}
+.sea-color {
+  fill: #36516b;
+}
+.map-headline {
+  font-size: 55.83px;
+}
+.map-headline,
+.map-places-text-medium {
+  font-family: answersFont;
+  font-weight: 700;
+}
+.map-places-text-medium {
+  font-size: 8.5vh;
+}
+.map-places-text {
+  font-size: 6vh;
+  font-family: answersFont;
+}
+
+.map-headline,
+.map-places-text-medium,
+.map-places-text {
+  direction: rtl;
+}
+
+.black-map-line {
+  stroke: #000;
+  stroke-miterlimit: 10;
+  stroke-width: 9px;
+}
+
+.city-container {
+  width: 96%;
+  border-radius: 1em;
+  padding: 0.7vh 0.5vw;
+  height: fit-content;
+  min-height: 14vh;
+  background-color: #c38324;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  border: solid 0.6vh #522d0a;
+}
+
+.map-cont {
+  width: 100%;
+  height: 66%;
+  margin-bottom: 2vh;
+}
+
+.city-drag {
+  font-size: 2.3vh;
+  /* font-size: 3vh; */
+  margin: 0.3vh;
+  background: #ceb36e;
+  padding: 0.4vh 0.8vw;
+  border: solid 0.5vh #522d0a;
+  border-radius: 0.5em;
+  user-select: none;
+}
+
+.drop-city {
+  width: fit-content;
+  height: 4.5vh;
+  border: solid 0.5vh #522d0a;
+  background: #ceb36e;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 0.5em;
+  user-select: none;
+}
+
+.drop-cont {
+  width: 100%;
+  height: 49%;
+  position: absolute;
+  top: 26%;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* display: none; */
+}
+
+.cheack-cont {
+  width: 96%;
+  padding: 0.7vh 0.5vw;
+  height: 15vh;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-around;
+
+}
+
+.placed {
+  /* padding: 1vh;
+width: fit-content; */
+  /* font-size: 3vh; */
+  font-size: 3vh;
+  width: 18vw;
+  margin: 0.3vw;
+}
+
+
+.city4,
+.city10 {
+  width: fit-content;
+  margin: 0vh 1.5vw;
+}
+
+.drop1 {
+  left: 15%;
+  top: 37%;
+}
+.drop2 {
+  left: 53%;
+  top: 15%;
+}
+.drop3 {
+  left: 30%;
+  top: 79.5%;
+}
+.drop4 {
+  left: 6%;
+  top: 49%;
+}
+.drop5 {
+  left: 46%;
+  top: 46%;
+}
+.drop6 {
+  left: 55%;
+  top: 36%;
+}
+.drop7 {
+  left: 40%;
+  top: 4%;
+}
+.drop8 {
+  left: 11%;
+  top: 66%;
+}
+.drop9 {
+  left: 51%;
+  top: 79.5%;
+}
+.drop10 {
+  left: 42%;
+  top: 57%;
+}
+.drop0 {
+  left: 32%;
+  top: 68%;
+}

@@ -1,38 +1,52 @@
-.App {
+@font-face {
+  font-family: headlineFont;
+  src: url(fonts/ShmulikHasamba-Medium.otf);
+}
+@font-face {
+  font-family: answersFont;
+  src: url(fonts/FbSpoiler-Regular.otf);
+}
+@font-face {
+  font-family: quoteFont;
+  src: url(fonts/Cooperative-Regular.otf);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  direction: rtl;
+}
+
+.btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 1vh 5.5vw;
   text-align: center;
+  background-color: #c36b0e;
+  border: #5b320c solid 0.5vh;
+  font-family: answersFont;
+  font-weight: 900;
+  color: #5b320c;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.headline {
+  font-family: headlineFont;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-questions {
+  font-family: answersFont;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.under-question-headlie {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 100%;
+  justify-content: space-around;
 }

@@ -1,0 +1,71 @@
+.clear-back {
+  fill: none;
+}
+.sky-back {
+  fill: #8ecfd6;
+}
+.sun {
+  fill: #fab52a;
+}
+.clouds-div {
+  opacity: 0.58;
+}
+.clouds5,
+.clouds1,
+.clouds2,
+.clouds3,
+.clouds4 {
+  fill: #fff;
+}
+
+.clouds1,
+.clouds5{
+  animation: move1 4s linear infinite;
+}
+
+
+.clouds4,
+.clouds2{
+  animation: move2 4s linear infinite;
+}
+
+.clouds1 {
+  opacity: 0.79;
+}
+.clouds2 {
+  opacity: 0.3;
+}
+.clouds3 {
+  opacity: 0.2;
+  animation: move1 4s 2s linear infinite;
+
+}
+.clouds4 {
+  opacity: 0.6;
+}
+.clouds5 {
+  opacity: 0.7;
+}
+
+@keyframes move1 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes move2 {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}

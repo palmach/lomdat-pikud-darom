@@ -1,0 +1,46 @@
+.next-btn{
+    align-self: flex-end;
+}
+
+.explain-part{
+    /* height: 80%; */
+    height: 78vh;
+}
+
+.explain-text{
+    font-size: 4vh;
+    width: 93vw;
+    height: 51vh;
+    direction: rtl;
+    display: flex;
+    overflow-y: scroll;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.explain-br{
+    display: none;
+}
+.pic-cont{
+    width: 80%;
+    height: 57%;
+    margin-top: 0.5vh;
+}
+
+.letter-mira-pic{
+    background-image: url(../../images/mira-letter.jpg);
+}
+.letter-sini-pic{
+    background-image: url(../../images/sinai-letter.jpg);
+}
+
+.flag-pic{
+    background-image: url(../../images/Raising-Flag.jpg);  
+}
+
+.pic{
+    background-size: 100% 100%;
+    width:100%;
+    height: 100%;
+}

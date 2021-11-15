@@ -1,0 +1,34 @@
+.desert {
+  clip-path: url(#clip-path);
+}
+.mountain1 {
+  fill: #b65a05;
+}
+.mountain2 {
+  fill: #dc8739;
+}
+.mountain3 {
+  fill: #c36b0e;
+}
+.mountain4 {
+  fill: #c67a2a;
+}
+.mountain5 {
+  fill: #cf884d;
+}
+.mountain6 {
+  fill: #b96920;
+}
+.mountain7 {
+  fill: #e99a46;
+}
+.mountain8 {
+  fill: #f2ab6f;
+}
+
+.desert-part{
+    width: 100vw;
+    height: -19vh;
+    position: absolute;
+    bottom: 0vh;
+}

@@ -1,0 +1,11 @@
+.fill-tab{
+    border: 0vh;
+    border-bottom: solid black;
+    width: 11vw;
+    margin: 0.6vw;
+    margin-top: 1vh;
+    height: 8vh;
+    background: #ffffff00;
+    outline: none;
+    text-align: center;
+}

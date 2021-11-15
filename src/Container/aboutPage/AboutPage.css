@@ -1,0 +1,28 @@
+.about-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 9.5vh;
+  color: #623103;
+}
+
+.about-headline {
+  font-size: 11vh;
+  margin: 0vh;
+  margin-bottom: 1vh;
+}
+
+.about-titles {
+  font-weight: 700;
+}
+
+.about-text {
+  font-family: answersFont;
+  font-size: 4vh;
+  margin: 1vh;
+}

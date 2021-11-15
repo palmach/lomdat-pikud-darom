@@ -1,0 +1,50 @@
+.first-page {
+    position: absolute;
+    width: 100vW;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.background-first {
+    height: 100vh;
+}
+
+.first-headline {
+    z-index: 1;
+    height: fit-content;
+    width: 70%;
+    font-size: 16vw;
+    color: #c36b0e;
+    line-height: 11vh;
+    display: flex;
+    text-shadow: 4.5px 0px 1px #5b320c;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3vh;
+}
+
+.bigger-word {
+    font-size: 28vw;
+}
+
+.start-btn {
+    color: #ead4c1;
+    margin-bottom: 7vh;
+    font-size: 4vh;
+    border-radius: 0.8em;
+    font-weight: 600;
+}
+
+.welcom-text {
+    font-size: 5vh;
+    width: 90%;
+}
+
+.text-opening{
+    opacity: 0;
+    /* display: none; */
+}

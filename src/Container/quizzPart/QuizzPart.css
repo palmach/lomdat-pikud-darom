@@ -1,0 +1,49 @@
+.quizz-part{
+    width: 100vw;
+    height: 100vh;
+}
+
+.questions-part{
+    position: absolute;
+    top: 10vh;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    /* display: none; */
+}
+
+.question-headline{
+    font-size: 9vh;
+    color: #5b320c;
+    margin: 0vh;
+    margin-bottom: 2vh;
+}
+
+.change-explain{
+    font-size: 4vh;
+    margin: 3vh;
+    border-radius: 0.5em;
+}
+
+.question{
+    font-size: 4vh;
+    width: 93%;
+    margin: 1vh;
+}
+
+.answers-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* margin-top: -6vh; */
+}
+
+.to-black{
+    display: block;
+    opacity: 1;
+  }
