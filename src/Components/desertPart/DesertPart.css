@@ -28,7 +28,7 @@
 
 .desert-part{
     width: 100vw;
-    height: -19vh;
+    /* height: -19vh; */
     position: absolute;
     bottom: 0vh;
 }

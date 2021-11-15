@@ -2,8 +2,8 @@
 .tower {
   isolation: isolate;
 }
-.grass-cont{
-    opacity: 0.9;
+.grass-cont {
+  opacity: 0.9;
   clip-path: url(#clip-path);
 }
 .bush9 {

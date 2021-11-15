@@ -11,15 +11,15 @@
   src: url(fonts/Cooperative-Regular.otf);
 }
 
-body {
+body,html {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
 .app {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   direction: rtl;
 }
 

@@ -1,8 +1,12 @@
+.sky-part{
+  width: 114%;
+}
 .clear-back {
   fill: none;
 }
 .sky-back {
   fill: #8ecfd6;
+  /* height: 100vh; */
 }
 .sun {
   fill: #fab52a;
