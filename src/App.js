@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import FirstPage from "./Container/firstPage/FirstPage";
 import LastPage from "./Container/lastPage/LastPage";
 import QuizzPart from "./Container/quizzPart/QuizzPart";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter , Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const [pageNum, setPageNum] = useState(0);
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="app">
-      <Router>
+      <BrowserRouter>
         <Routes>
           <Route
             exact
@@ -47,7 +48,7 @@ function App() {
             {/* <LastPage pageNum={pageNum} setPageNum={setPageNum} /> */}
           </Route>
         </Routes>
-      </Router>
+      </BrowserRouter>
       <header className="App-header"></header>
     </div>
   );
