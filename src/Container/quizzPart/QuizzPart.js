@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./QuizzPart.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 
 // import Map from "../../Components/map/Map";
@@ -14,7 +14,7 @@ import QuestionsContainer from "../questionsContainer/QuestionsContainer";
 import Text from "../../Text.json";
 
 function QuizzPart(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const [isAnswerd, setIsAnswerd] = useState(false);
   // const [hasExplain, setHasExplain] = useState(false);
 
@@ -26,7 +26,7 @@ function QuizzPart(props) {
   useEffect(() => {
     if (props.questionNum !== 14) {
       //   props.setQuestionNum(3);
-      //   history.push("/end");
+      //   navigate("/end");
       // } else {
         hasExplain =
         // setHasExplain()
@@ -60,7 +60,7 @@ function QuizzPart(props) {
         duration: 1.75,
       });
       props.setPageNum(3);
-      history.push("/end");
+      navigate("/end");
     } else {
       props.setQuestionNum((prevState) => prevState + 1);
     }

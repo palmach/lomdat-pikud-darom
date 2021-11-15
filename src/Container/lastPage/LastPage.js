@@ -4,11 +4,11 @@ import gsap from "gsap";
 import SkyPart from "../../Components/skyPart/SkyPart";
 import AboutPage from "../aboutPage/AboutPage";
 import FirstPage from "../firstPage/FirstPage";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function LastPage(props) {
   const [isAbout, setIsAbout] = useState(false);
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const blackRef = useRef();
 
@@ -25,10 +25,10 @@ function LastPage(props) {
     //   });
 
     //   const timer = setTimeout(() => {
-    //     history.push("/questions");
+    //     navigate("/questions");
     //   }, 2500);
     //   return () => clearTimeout(timer);
-    //   // history.push("/questions");
+    //   // navigate("/questions");
     // }   else
    if (props.pageNum === 3) {
       gsap.to(blackRef.current, {

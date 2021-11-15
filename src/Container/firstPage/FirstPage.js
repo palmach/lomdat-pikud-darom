@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./FirstPage.css";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import gsap from "gsap";
 
 function FirstPage(props) {
-  const history = useHistory();
+  const navigate = useNavigate();
   const blackRef = useRef();
 
   const [textArray, setTextArray] = useState([]);
@@ -24,10 +24,10 @@ function FirstPage(props) {
     //   });
 
     //   const timer = setTimeout(() => {
-    //     history.push("/questions");
+    //     navigate("/questions");
     //   }, 2500);
     //   return () => clearTimeout(timer);
-    //   // history.push("/questions");
+    //   // navigate("/questions");
     // } 
   };
   
@@ -50,10 +50,10 @@ function FirstPage(props) {
       });
   
       const timer = setTimeout(() => {
-        history.push("/questions");
+        navigate("/questions");
       }, 2500);
       return () => clearTimeout(timer);
-      // history.push("/questions");
+      // navigate("/questions");
     } 
   }, [props.pageNum]);
 
