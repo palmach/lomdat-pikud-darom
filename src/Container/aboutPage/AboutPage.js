@@ -1,15 +1,12 @@
-// AboutPage
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./AboutPage.css";
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import gsap from "gsap";
 
 function AboutPage(props) {
-
   return (
     <div className="about-page">
         <p className="headline about-headline">אודות</p>
-        {/* <div></div> */}
         <p className="about-text"><span className="about-titles">ראש מדור מט"ח: </span>רס"ן מור דהן</p>
         <p className="about-text"><span className="about-titles">מפקדת הדיגיטל: </span>סגן יעל חפץ</p>
         <p className="about-text"><span className="about-titles">מפקדת סטודיו: </span>סגן נועה דהן</p>

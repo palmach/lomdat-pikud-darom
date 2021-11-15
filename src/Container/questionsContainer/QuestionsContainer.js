@@ -9,14 +9,13 @@ import { Markup } from "interweave";
 
 function QuestionsContainer(props) {
   const [isCheacked, setIsCheacked] = useState(false);
-  // const [isAnswerd, setIsAnswerd] = useState(false);
+
+  var hasExplain =
+    Text[props.questionNum]["explain"] !== "" ||
+    Text[props.questionNum]["pic"] !== "";
   const cheackAns = () => {
     setIsCheacked(true);
   };
-
-  useEffect(()=>{
-   console.log("toExplain "+props.toExplain);
-  },[props.questionNum])
 
   return (
     <div className="questions-container under-question-headlie">
@@ -59,17 +58,20 @@ function QuestionsContainer(props) {
         <div className="cheack-btn btn" onClick={cheackAns}>
           בדיקה
         </div>
-      ) :props.questionNum === 7 && isCheacked === true && (
-        <div className="cheack-btn btn" onClick={props.changeQuestion}>
-          הבא
-        </div>
+      ) : (
+        props.questionNum === 7 &&
+        isCheacked === true && (
+          <div className="cheack-btn btn" onClick={props.changeQuestion}>
+            הבא
+          </div>
+        )
       )}
 
       {/* // <div className="cheack-btn btn" onClick={}>בדיקה</div> */}
-      { props.toExplain && (
+      {hasExplain && (
         <div
           className="btn back-btn change-explain"
-          onClick={ props.changeFromExplain }
+          onClick={props.changeFromExplain}
         >
           חזור
         </div>

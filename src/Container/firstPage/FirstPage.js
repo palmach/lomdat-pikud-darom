@@ -16,19 +16,6 @@ function FirstPage(props) {
   const changeText = () => {
     props.setPageNum((prevState) => prevState + 1);
     console.log(props.pageNum);
-    // if (props.pageNum === 2) {
-    //   gsap.to(blackRef.current, {
-    //     display: "block",
-    //     opacity: 1,
-    //     duration: 1.75,
-    //   });
-
-    //   const timer = setTimeout(() => {
-    //     navigate("/questions");
-    //   }, 2500);
-    //   return () => clearTimeout(timer);
-    //   // navigate("/questions");
-    // } 
   };
   
   useEffect(() => {

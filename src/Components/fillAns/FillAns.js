@@ -1,15 +1,14 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
 import "./FillAns.css";
-import FillTab from "./../fillTab/FillTab"
+import FillTab from "./../fillTab/FillTab";
 import gsap from "gsap";
 import Text from "./../../Text.json";
 
 function FillAns(props) {
-  const endValue=["ע","מ","ו","ד","ע","נ","נ"]
+  const endValue = ["ע", "מ", "ו", "ד", "ע", "נ", "נ"];
 
   return (
     <div className="fill-btn-cont">
-    {/* <div className="under-question-headlie"> */}
       {Text[props.questionNum]["letters"].map((ans, index) => {
         if (index === 3 || index === 6) {
           return (
@@ -22,7 +21,13 @@ function FillAns(props) {
           );
         } else {
           return (
-           <FillTab key={index} index={index} endValue={endValue[index]} isCheacked={props.isCheacked} setIsCheacked={props.setIsCheacked} />
+            <FillTab
+              key={index}
+              index={index}
+              endValue={endValue[index]}
+              isCheacked={props.isCheacked}
+              setIsCheacked={props.setIsCheacked}
+            />
           );
         }
       })}

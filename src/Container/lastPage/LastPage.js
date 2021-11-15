@@ -12,24 +12,9 @@ function LastPage(props) {
 
   const blackRef = useRef();
 
-  // useEffect(()=>{console.log(props.pageNum);},[props.pageNum])
 
   useEffect(() => {
     console.log(props.pageNum);
-    // console.log(blackRef.current.className);
-    // if (props.pageNum === 2) {
-    //   gsap.to(blackRef.current, {
-    //     display: "block",
-    //     opacity: 1,
-    //     duration: 1.75,
-    //   });
-
-    //   const timer = setTimeout(() => {
-    //     navigate("/questions");
-    //   }, 2500);
-    //   return () => clearTimeout(timer);
-    //   // navigate("/questions");
-    // }   else
    if (props.pageNum === 3) {
       gsap.to(blackRef.current, {
         display: "none",
@@ -45,18 +30,6 @@ function LastPage(props) {
 
   return (
     <div className="end-part">
-      {/* <div
-        className={`black-back ${
-          props.pageNum === 0 
-            ? "from-black"
-          :props.pageNum === 1
-            ? "from-black"
-            : props.pageNum === 3
-            ? "black-back"
-            : ""
-        }`}
-        ref={blackRef}
-      ></div> */}
       <SkyPart />
       <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 1080 1920" className="desert-part">
         <defs>

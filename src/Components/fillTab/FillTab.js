@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./FillTab.css";
 import gsap from "gsap";
-import Text from "./../../Text.json";
 
 function FillTab(props) {
   const colorRef = useRef();

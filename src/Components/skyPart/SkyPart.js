@@ -1,7 +1,7 @@
 import React from "react";
 import "./SkyPart.css";
 
-function SkyPart(props) {
+function SkyPart() {
   return (
     <div className="sky-part">
       <svg

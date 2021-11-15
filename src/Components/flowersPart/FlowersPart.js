@@ -1,7 +1,7 @@
 import React from "react";
 import "./FlowersPart.css";
 
-function FlowersPart(props) {
+function FlowersPart() {
   return (
     <svg
       id="Layer_1"

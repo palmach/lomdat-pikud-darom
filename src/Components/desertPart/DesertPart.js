@@ -1,7 +1,7 @@
 import React from "react";
 import "./DesertPart.css";
 
-function DesertPart(props) {
+function DesertPart() {
   return (
     <div className="desert-part">
       <svg

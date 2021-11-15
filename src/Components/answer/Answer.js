@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Answer.css";
 import gsap from "gsap";
 import Text from "./../../Text.json";
 
 function Answer(props) {
-  // if(isAnswerd===true){}
   const colorRef = useRef();
   const checkAns = (event) => {
     if (props.isAnswerd === false) {
