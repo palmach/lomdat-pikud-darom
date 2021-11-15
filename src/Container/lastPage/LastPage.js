@@ -58,7 +58,7 @@ function LastPage(props) {
         ref={blackRef}
       ></div> */}
       <SkyPart />
-      <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 1080 1920">
+      <svg id="Layer_1" data-name="Layer 1" viewBox="0 0 1080 1920" className="desert-part">
         <defs>
           <clipPath id="clip-path-3">
             <rect className="clear-back" y="1448" width="1083" height="476" />
