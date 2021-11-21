@@ -33,6 +33,9 @@ body,html {
   font-family: answersFont;
   font-weight: 900;
   color: #5b320c;
+  position: absolute;
+  bottom: 10vh;
+  user-select: none;
 }
 
 .headline {
