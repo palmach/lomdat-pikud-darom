@@ -3,7 +3,8 @@
 }
 
 .questions-container{
-    height: 74%;
+    height: 84%;
+    /* height: 74%; */
     justify-content: space-between;
 }
 
