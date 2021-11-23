@@ -4,7 +4,8 @@
 }
 
 .map {
-  height: 100%;
+      width: 78%;
+  /* height: 100%; */
   /* width: 94%; */
 }
 
@@ -57,6 +58,7 @@
   justify-content: space-evenly;
   align-content: space-around;
   border: solid 0.6vh #522d0a;
+  margin: 3%;
 }
 
 .map-cont {
