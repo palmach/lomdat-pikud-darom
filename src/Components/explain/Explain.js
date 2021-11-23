@@ -9,10 +9,10 @@ function Explain(props) {
   }, []);
 
   return (
-    <div className="explain-part under-question-headlie">
+    <div className={`explain-part under-question-headlie ${"long-explain-part"}`}>
       {Text[props.questionNum]["explain"] !== "" && (
         <Markup
-          className="explian text-questions explain-text"
+          className={`explian text-questions explain-text ${"long-explain"}`}
           content={Text[props.questionNum]["explain"]}
         />
       )}

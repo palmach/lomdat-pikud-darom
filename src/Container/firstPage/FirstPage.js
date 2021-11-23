@@ -15,7 +15,6 @@ function FirstPage(props) {
 
   const changeText = () => {
     props.setPageNum((prevState) => prevState + 1);
-    console.log(props.pageNum);
   };
   
   useEffect(() => {
@@ -40,17 +39,11 @@ function FirstPage(props) {
         navigate("/questions");
       }, 2500);
       return () => clearTimeout(timer);
-      // navigate("/questions");
     } 
   }, [props.pageNum]);
 
   useEffect(() => {
     if (textArray.length === 1) {
-      // gsap.to(".text-opening0", {
-      //   y: -50,
-      //   duration: 0.5,
-      //   delay:0.5
-      // });
       const timer = setTimeout(() => {
         setTextArray((oldArray) => [...oldArray, emptyTextArray[1]]);
         gsap.to(".text-opening1", {
@@ -58,13 +51,7 @@ function FirstPage(props) {
           opacity: 1,
           duration: 0.8,
         });
-        // gsap.to(".text-opening1", {
-        //   y: -50,
-        // duration: 0.5,
-        // delay:0.5
-        // });
         gsap.to(".start-btn", {
-          // display: "block",
           opacity: 1,
           duration: 0.8,
           delay: 1,

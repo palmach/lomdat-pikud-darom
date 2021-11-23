@@ -14,7 +14,6 @@ function LastPage(props) {
 
 
   useEffect(() => {
-    console.log(props.pageNum);
    if (props.pageNum === 3) {
       gsap.to(blackRef.current, {
         display: "none",

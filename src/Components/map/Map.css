@@ -61,7 +61,7 @@
 
 .map-cont {
   width: 100%;
-  height: 66%;
+  height: 65%;
   margin-bottom: 2%;
   position: relative;
 }
@@ -92,7 +92,7 @@
 
 .drop-cont {
   width: 100%;
-  height: 100%;
+  height: 96%;
   position: absolute;
   top: 4%;
   /* display: flex;
@@ -128,15 +128,15 @@ width: fit-content; */
 
 .drop1 {
   left: 15%;
-  top: 37%;
+  top: 38.5%;
 }
 .drop2 {
   left: 53%;
-  top: 15%;
+  top: 16%;
 }
 .drop3 {
   left: 30%;
-  top: 79.5%;
+  top: 80.5%;
 }
 .drop4 {
   left: 6%;
@@ -148,7 +148,7 @@ width: fit-content; */
 }
 .drop6 {
   left: 55%;
-  top: 36%;
+  top: 35%;
 }
 .drop7 {
   left: 40%;
@@ -160,7 +160,7 @@ width: fit-content; */
 }
 .drop9 {
   left: 51%;
-  top: 79.5%;
+  top: 80.5%;
 }
 .drop10 {
   left: 42%;

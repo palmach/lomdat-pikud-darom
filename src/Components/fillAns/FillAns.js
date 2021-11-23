@@ -7,6 +7,18 @@ import Text from "./../../Text.json";
 function FillAns(props) {
   const endValue = ["ע", "מ", "ו", "ד", "ע", "נ", "נ"];
 
+  const moveTab = (event, index) => {
+    let nextfiled;
+    if (index + 1 !== 3) {
+      nextfiled = document.querySelector(`input[name=field-${index + 1}]`);
+    } else {
+      nextfiled = document.querySelector(`input[name=field-${index + 2}]`);
+    }
+    if (nextfiled !== null) {
+      nextfiled.focus();
+    }
+  };
+
   return (
     <div className="fill-btn-cont">
       {Text[props.questionNum]["letters"].map((ans, index) => {
@@ -24,9 +36,15 @@ function FillAns(props) {
             <FillTab
               key={index}
               index={index}
+              name={`field-${index}`}
               endValue={endValue[index]}
               isCheacked={props.isCheacked}
               setIsCheacked={props.setIsCheacked}
+              moveTab={moveTab}
+              // handelChange = {handelChange}
+              nextfiled={document.querySelector(
+                `input[name=filed-${index + 1}]`
+              )}
             />
           );
         }

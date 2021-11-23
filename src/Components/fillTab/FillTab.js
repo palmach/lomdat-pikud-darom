@@ -8,7 +8,15 @@ function FillTab(props) {
   const [isCorrect, setIsCorrect] = useState(false);
 
   const handelChange = (event) => {
+    const { maxLength, value } = event.target;
+    let fieldIntIndex = parseInt(props.index, 10);
+
     setInputValue(event.target.value);
+    if (value.length >= maxLength) {
+      if (fieldIntIndex < 6) {
+        props.moveTab(event, props.index);
+      }
+    }
   };
 
   useEffect(() => {
@@ -18,7 +26,7 @@ function FillTab(props) {
           borderBottomColor: "#56821D",
           duration: 0.25,
         });
-        setIsCorrect(true)
+        setIsCorrect(true);
       } else {
         gsap.to(colorRef.current, {
           borderBottomColor: "#bb3c02",
@@ -32,10 +40,12 @@ function FillTab(props) {
   return (
     <input
       ref={colorRef}
+      name={props.name}
       className="fill-tab tabs"
       value={inputValue}
       onChange={handelChange}
-      disabled = {isCorrect}
+      disabled={isCorrect}
+      maxLength="1"
       // disabledInputStyle={{color:'black'}}
     />
   );

@@ -33,19 +33,12 @@ function App() {
               />
             }
           >
-            {/* <QuizzPart
-              pageNum={pageNum}
-              setPageNum={setPageNum}
-              questionNum={questionNum}
-              setQuestionNum={setQuestionNum}
-            /> */}
           </Route>
           <Route
             exact
             path="/end"
             element={<LastPage pageNum={pageNum} setPageNum={setPageNum} />}
           >
-            {/* <LastPage pageNum={pageNum} setPageNum={setPageNum} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

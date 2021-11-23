@@ -4,5 +4,6 @@
     border-radius: 0.7em;
     font-size: 6vw;
     margin: 1vh;
+    position: inherit;
     /* margin-top: -6vh; */
 }

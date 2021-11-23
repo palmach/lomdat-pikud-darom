@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutPage.css";
-// import { useHistory } from "react-router-dom";
 import gsap from "gsap";
 
 function AboutPage(props) {
