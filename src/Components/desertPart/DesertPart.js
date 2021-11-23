@@ -8,7 +8,7 @@ function DesertPart() {
         id="Layer_1"
         data-name="Layer 1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1081 540.55"
+        viewBox="0 0 1081 640.55"
       >
         <defs>
           <clipPath id="clip-path">

@@ -5,6 +5,7 @@ import Text from "./../../Text.json";
 
 function Answer(props) {
   const colorRef = useRef();
+
   const checkAns = (event) => {
     if (props.isAnswerd === false) {
       props.setIsAnswerd(true);
@@ -17,14 +18,19 @@ function Answer(props) {
       const timer = setTimeout(() => {
         props.changeQuestion();
         props.setIsAnswerd(false);
+        // gsap.to(".answers-container", { opacity: 0, duration: 0.25 });
+        
       }, 2500);
       return () => clearTimeout(timer);
     }
   };
-
+  
   useEffect(() => {
     gsap.to(colorRef.current, { backgroundColor: "#c36b0e", duration: 0 });
   }, [props.ansText]);
+  // useEffect(() => {
+  //   gsap.to(".answers-container", { opacity: 1, duration: 0.25 });
+  // }, []);
 
   return (
     <div

@@ -6,6 +6,7 @@ import Map from "../../Components/map/Map";
 import FillAns from "../../Components/fillAns/FillAns";
 import Text from "../../Text.json";
 import { Markup } from "interweave";
+import { flushSync } from "react-dom";
 
 function QuestionsContainer(props) {
   const [isCheacked, setIsCheacked] = useState(false);
@@ -16,6 +17,22 @@ function QuestionsContainer(props) {
   const cheackAns = () => {
     setIsCheacked(true);
   };
+
+        
+  // useEffect(() => {
+  //   if(props.isAnswerd ){
+  //     gsap.to(".answers-container", { opacity: 0, duration: 0.25, delay: 1 });
+  //   }else{
+  //     gsap.to(".answers-container", { opacity: 1, duration: 0.25, delay: 0.75 });
+  //   }
+  //   }, [props.isAnswerd]);
+  // useEffect(() => {
+  //   if(props.isAnswerd=== false ){
+  //     gsap.to(".answers-container", { opacity: 1, duration: 0.25, delay: 0.75 });
+  //   }
+  //   }, []);
+
+
 
   return (
     <div className="questions-container under-question-headlie">

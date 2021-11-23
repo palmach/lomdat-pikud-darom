@@ -50,9 +50,24 @@ function QuizzPart(props) {
   };
 
   useEffect(() => {
+    if(isAnswerd ){
+      gsap.to(".questions-part", { opacity: 0, duration: 0.25, delay: 2.15 });
+    }
+    else{
+      gsap.to(".questions-part", { opacity: 1, duration: 0.5 });
+        console.log("ffff");
+    }
+    }, [isAnswerd]);
+  
+  useEffect(() => {
     if (props.questionNum === 0) {
       gsap.to(".black-back", { display: "none", opacity: 0, duration: 1.75 });
+    // }else{
+    //   gsap.to(".questions-part", { opacity: 1, duration: 0.25, delay: 0.75 });
+
     }
+    // if(isAnswerd=== false ){
+    // }
   }, []);
 
   return (
