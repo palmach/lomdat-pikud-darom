@@ -46,7 +46,6 @@ function FillTab(props) {
       onChange={handelChange}
       disabled={isCorrect}
       maxLength="1"
-      // disabledInputStyle={{color:'black'}}
     />
   );
 }

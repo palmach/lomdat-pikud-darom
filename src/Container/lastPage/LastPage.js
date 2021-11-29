@@ -716,34 +716,6 @@ function LastPage(props) {
       ) : (
         <AboutPage />
       )}
-      {/* 
-      {isAbout ? (
-        <AboutPage />
-      ) : (
-        <div className="end-content">
-          <div className="end-text-cont">
-            <p className="end-quote">" כי מדרום תיפתח הטובה "</p>
-            <p className="end-text">כל הכבוד סיימתם את הלומדה בהצלחה!</p>
-            <p className="end-text">תודה שביצעתם את לומדת פיקוד דרום!</p>
-            <div className="pic-last"></div>
-          </div>
-          <div className="about-btn btn" onClick={toAbout}>
-            אודות
-          </div>
-        </div>
-      )} */}
-
-      {/* <div className="end-content">
-        <div className="end-text-cont">
-          <p className="end-quote">" כי מדרום תיפתח הטובה "</p>
-          <p className="end-text">כל הכבוד סיימתם את הלומדה בהצלחה!</p>
-          <p className="end-text">תודה שביצעתם את לומדת פיקוד דרום!</p>
-          <div className="pic-last"></div>
-        </div>
-        <div className="about-btn btn" onClick={toAbout}>
-          אודות
-        </div>
-      </div> */}
     </div>
   );
 }

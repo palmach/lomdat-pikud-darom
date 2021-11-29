@@ -95,27 +95,6 @@ function Map(props) {
             x2="643"
             y2="881.55"
           />
-          {/* <g className="drop-cont"> */}
-          {/* <div className="drop-cont"> */}
-          {/* {Text[props.questionNum]["answers"].map((name, index) => {
-            return (
-              <DropTarget
-                targetKey={`city${index}`}
-                key={index}
-                onHit={handleDrop}
-              >
-                <div className={`drop-city drop${index}`}>
-                  {data[index] === 1 ? (
-                    <div className={` city${index} placed`}>{name}</div>
-                  ) : (
-                    <div className={`placed`}></div>
-                  )}
-                </div>
-              </DropTarget>
-            );
-          })} */}
-        {/* </div> */}
-          {/* </g> */}
         </svg>
 
         <div className="drop-cont">

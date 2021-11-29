@@ -12,7 +12,6 @@ import Text from "../../Text.json";
 function QuizzPart(props) {
   const navigate = useNavigate();
   const [isAnswerd, setIsAnswerd] = useState(false);
-  // const [hasExplain, setHasExplain] = useState(false);
 
   var hasExplain =
     Text[props.questionNum]["explain"] !== "" ||
@@ -44,30 +43,24 @@ function QuizzPart(props) {
   };
 
   const changeFromExplain = () => {
-    if (isAnswerd === false ) {
+    if (isAnswerd === false) {
       setToExplain((prevState) => !prevState);
     }
   };
 
   useEffect(() => {
-    if(isAnswerd ){
+    if (isAnswerd) {
       gsap.to(".questions-part", { opacity: 0, duration: 0.25, delay: 2.15 });
-    }
-    else{
+    } else {
       gsap.to(".questions-part", { opacity: 1, duration: 0.5 });
-        console.log("ffff");
+      console.log("ffff");
     }
-    }, [isAnswerd]);
-  
+  }, [isAnswerd]);
+
   useEffect(() => {
     if (props.questionNum === 0) {
       gsap.to(".black-back", { display: "none", opacity: 0, duration: 1.75 });
-    // }else{
-    //   gsap.to(".questions-part", { opacity: 1, duration: 0.25, delay: 0.75 });
-
     }
-    // if(isAnswerd=== false ){
-    // }
   }, []);
 
   return (
@@ -103,7 +96,6 @@ function QuizzPart(props) {
             pageNum={props.pageNum}
             changeQuestion={changeQuestion}
             changeFromExplain={changeFromExplain}
-            // toExplain={toExplain}
             isAnswerd={isAnswerd}
             setIsAnswerd={setIsAnswerd}
           />

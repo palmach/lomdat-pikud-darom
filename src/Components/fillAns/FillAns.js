@@ -1,7 +1,6 @@
 import React from "react";
 import "./FillAns.css";
 import FillTab from "./../fillTab/FillTab";
-import gsap from "gsap";
 import Text from "./../../Text.json";
 
 function FillAns(props) {
@@ -41,7 +40,6 @@ function FillAns(props) {
               isCheacked={props.isCheacked}
               setIsCheacked={props.setIsCheacked}
               moveTab={moveTab}
-              // handelChange = {handelChange}
               nextfiled={document.querySelector(
                 `input[name=filed-${index + 1}]`
               )}

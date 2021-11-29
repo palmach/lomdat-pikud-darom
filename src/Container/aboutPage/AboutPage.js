@@ -1,6 +1,5 @@
 import React from "react";
 import "./AboutPage.css";
-import gsap from "gsap";
 
 function AboutPage(props) {
   return (
